@@ -6,8 +6,8 @@
 import sys
 import argparse
 import textwrap
-from traiter_label_babel.pylib.util import __VERSION__
-from traiter_label_babel.readers import csv_reader
+from label_babel.pylib.util import __VERSION__
+from label_babel.readers import csv_reader
 
 # Date, taxon names, collector, collector number
 # admin units: like state, county, country

@@ -2,7 +2,7 @@
 
 import regex
 import pandas as pd
-from traiter_label_babel.pylib import util, patterns
+from label_babel.pylib import util, patterns
 from traiter.vocabulary import Vocabulary
 
 STATE_CSV = util.DATA_DIR / 'US_states.csv'

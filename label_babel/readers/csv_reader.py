@@ -1,7 +1,7 @@
 """Read data from a CSV file."""
 
 import pandas as pd
-from traiter_label_babel.pylib import util, db
+from label_babel.pylib import util, db
 
 
 def read(args):

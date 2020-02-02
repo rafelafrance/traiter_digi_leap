@@ -2,12 +2,12 @@
 
 import regex
 from itertools import zip_longest
-from traiter_label_babel.pylib import util
-from traiter_label_babel.pylib.trait import Trait
-from traiter_label_babel.parsers.us_states import STATE_NAMES
-from traiter_label_babel.parsers import name_parts
+from label_babel.pylib import util
+from label_babel.pylib.trait import Trait
+from label_babel.parsers.us_states import STATE_NAMES
+from label_babel.parsers import name_parts
 from traiter.vocabulary import Vocabulary, LOWEST
-from traiter_label_babel.parsers.base import Base
+from label_babel.parsers.base import Base
 
 VOCAB = Vocabulary(name_parts.VOCAB)
 

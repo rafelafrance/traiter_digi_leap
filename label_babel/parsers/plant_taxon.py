@@ -1,10 +1,10 @@
 """Find taxon notations on herbarium specimen labels."""
 
 import pandas as pd
-from traiter_label_babel.pylib.trait import Trait
-from traiter_label_babel.pylib import util, patterns
+from label_babel.pylib.trait import Trait
+from label_babel.pylib import util, patterns
 from traiter.vocabulary import Vocabulary, LOWEST
-from traiter_label_babel.parsers.base import Base
+from label_babel.parsers.base import Base
 
 PLANT_FAMILIES = util.DATA_DIR / 'itis_plant_families.csv'
 PLANT_GENERA = util.DATA_DIR / 'itis_plant_genera.csv'

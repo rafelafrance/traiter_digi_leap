@@ -5,10 +5,10 @@ from calendar import IllegalMonthError
 from dateutil import parser
 from dateutil.relativedelta import relativedelta
 import regex
-from traiter_label_babel.pylib.trait import Trait
-from traiter_label_babel.pylib import util, patterns
+from label_babel.pylib.trait import Trait
+from label_babel.pylib import util, patterns
 from traiter.vocabulary import Vocabulary, LOWEST
-from traiter_label_babel.parsers.base import Base
+from label_babel.parsers.base import Base
 
 VOCAB = Vocabulary(patterns.VOCAB)
 

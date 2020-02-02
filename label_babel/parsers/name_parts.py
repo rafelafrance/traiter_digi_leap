@@ -1,7 +1,7 @@
 """Patterns for names."""
 
 import pandas as pd
-from traiter_label_babel.pylib import util, patterns
+from label_babel.pylib import util, patterns
 from traiter.vocabulary import Vocabulary
 
 NAME_CSV = util.DATA_DIR / 'name_parts.csv'

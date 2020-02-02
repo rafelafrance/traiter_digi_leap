@@ -1,9 +1,9 @@
 """Parse administrative unit notations."""
 
-from traiter_label_babel.pylib.trait import Trait
-from traiter_label_babel.parsers import us_counties, us_states
+from label_babel.pylib.trait import Trait
+from label_babel.parsers import us_counties, us_states
 from traiter.vocabulary import Vocabulary
-from traiter_label_babel.parsers.base import Base
+from label_babel.parsers.base import Base
 
 VOCAB = Vocabulary(us_counties.VOCAB)
 

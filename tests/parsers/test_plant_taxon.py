@@ -3,8 +3,8 @@
 
 import textwrap
 import unittest
-from traiter_label_babel.pylib.trait import Trait
-from traiter_label_babel.parsers.plant_taxon import PLANT_TAXON, PLANT_FAMILY
+from label_babel.pylib.trait import Trait
+from label_babel.parsers.plant_taxon import PLANT_TAXON, PLANT_FAMILY
 
 
 class TestPlantTaxon(unittest.TestCase):

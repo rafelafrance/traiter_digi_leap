@@ -1,6 +1,6 @@
 """Build a trait parse result."""
 
-from traiter_label_babel.pylib.util import DotDict
+from label_babel.pylib.util import DotDict
 
 
 class Trait(DotDict):
