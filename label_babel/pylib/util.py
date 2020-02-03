@@ -10,6 +10,8 @@ FLAGS = regex.VERBOSE | regex.IGNORECASE
 BATCH_SIZE = 1_000_000  # How many records to work with at a time
 
 DATA_DIR = Path('.') / 'data'
+if not DATA_DIR.exists():
+    DATA_DIR = Path('..') / 'data'
 
 
 class DotDict(dict):
