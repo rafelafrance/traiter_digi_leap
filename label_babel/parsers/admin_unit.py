@@ -25,14 +25,16 @@ ADMIN_UNIT = Base(
     name='us_county',
     rules=[
         VOCAB['eol'],
+        VOCAB['word'],
         VOCAB.term('co_label', r""" co | coun[tc]y """, capture=False),
         VOCAB.term('st_label', r"""
             ( plants | flora ) \s* of """, capture=False),
 
-        VOCAB.producer(convert, ' us_state? eol? co_label us_county '),
-        VOCAB.producer(convert, ' us_county co_label us_state? '),
-        VOCAB.producer(convert, ' us_county us_state '),
+        VOCAB.producer(convert, ' us_state? eol? co_label comma? us_county '),
+        VOCAB.producer(convert, ' us_county co_label comma? us_state? '),
+        VOCAB.producer(convert, ' us_county comma? us_state '),
         VOCAB.producer(convert, """
             st_label us_state eol? co_label us_county """),
         VOCAB.producer(convert, ' st_label eol? us_state '),
+        VOCAB.producer(convert, ' us_state '),
     ])

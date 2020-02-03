@@ -38,7 +38,7 @@ class TestAdminUnit(unittest.TestCase):
         """It handles a trailing county abbreviation."""
         self.assertEqual(
             ADMIN_UNIT.parse('Alleghany Co,'),
-            [Trait(us_county='Alleghany', start=0, end=12)])
+            [Trait(us_county='Alleghany', start=0, end=13)])
 
     def test_parse_06(self):
         """It normalizes state abbreviations."""

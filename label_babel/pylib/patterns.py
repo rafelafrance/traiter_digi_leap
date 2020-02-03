@@ -29,6 +29,8 @@ VOCAB.term('and', r' and ', capture=False)
 VOCAB.term('conj', ' or and '.split(), capture=False)
 VOCAB.term('prep', ' to with on of '.split(), capture=False)
 
+VOCAB.term('word', r' [a-z] \w* ', capture=False, priority=LOWEST)
+
 # NOTE: Double quotes as inches is handled elsewhere
 VOCAB.part('inches', r"""
     (?<! [a-z] ) ( inch e? s? | in s? (?! [a-ru-wyz] ) ) """)

@@ -40,7 +40,11 @@ def convert(token):
         return None
 
     if token.group.get('collector_no'):
-        traits[0].col_no = token.group['collector_no']
+        col_no = token.group['collector_no']
+        # Temp hack
+        if col_no[-1] in ('m', 'M'):
+            return None
+        traits[0].col_no = col_no
 
     return util.squash(traits)
 
@@ -83,6 +87,9 @@ COLLECTOR = Base(
 
         VOCAB.term('junk', r' date '.split()),
 
+        VOCAB.term('skip', """ of on dry """.split()),
+        VOCAB.part('semi', r' [;] '),
+
         VOCAB.term('col_no', r"""
             [[:alpha:][:digit:]\-]+ """, priority=LOWEST),
 
@@ -97,7 +104,7 @@ COLLECTOR = Base(
             (?<= ^ | eol )
             (?<! other_label comma? name_part? ) (?<! part | col_no )
                 noise? col_label comma? noise?
-                (?P<col_name> collector 
+                (?P<col_name> collector
                     ( joiner collector )* ( comma name_part )? )
                 noise?
             ( eol* ( (no_label? comma? (?P<collector_no> col_no )
@@ -116,4 +123,9 @@ COLLECTOR = Base(
                     (?P<collector_no> ( part | col_no ){1,2} ) ) ) )?
             (?! header_key )
             (?= month_name | col_no | eol | $ ) """),
+
+        VOCAB.producer(convert, """
+            (?P<col_name> collector ) (?P<collector_no> col_no)
+            """),
        ])
+

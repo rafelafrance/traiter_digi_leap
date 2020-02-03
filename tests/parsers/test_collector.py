@@ -7,7 +7,7 @@ from label_babel.pylib.trait import Trait
 from label_babel.parsers.collector import COLLECTOR
 
 
-class TestLabelDate(unittest.TestCase):
+class TestCollector(unittest.TestCase):
 
     def test_parse_01(self):
         """It parses a collector name & number."""
@@ -179,3 +179,10 @@ class TestLabelDate(unittest.TestCase):
             COLLECTOR.parse("""Sarah Nunn and Laura Eason 9834"""),
             [Trait(col_name='Sarah Nunn', col_no='9834', start=0, end=31),
              Trait(col_name='Laura Eason', start=0, end=31)])
+
+    def test_parse_19(self):
+        """This failed."""
+        self.assertEqual(
+            COLLECTOR.parse("""George P. Johnson #5689"""),
+            [Trait(col_name='George P. Johnson', col_no='5689',
+                   start=0, end=23)])
