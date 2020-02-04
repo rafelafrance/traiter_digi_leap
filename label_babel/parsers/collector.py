@@ -82,7 +82,7 @@ COLLECTOR = Base(
             writer
             """.split(), capture=False),
 
-        VOCAB.part('noise', r" [_`‘|\[\]]+ "),
+        VOCAB.part('noise', r" [_`‘|\[\]/-]+ "),
         VOCAB.term('header_key', r' herbarium '.split()),
 
         VOCAB.term('junk', r' date '.split()),
@@ -91,7 +91,7 @@ COLLECTOR = Base(
         VOCAB.part('semi', r' [;] '),
 
         VOCAB.term('col_no', r"""
-            [[:alpha:][:digit:]\-]+ """, priority=LOWEST),
+            [[:alpha:][:digit:]\-]+ (?! [.] )""", priority=LOWEST),
 
         VOCAB.grouper('collector', """
             ( (name_part | initial) )+ 

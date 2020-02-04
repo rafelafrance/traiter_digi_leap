@@ -20,4 +20,4 @@ def build_name_parts():
 build_name_parts()
 
 VOCAB.term('suffix', SUFFIXES)
-VOCAB.term('initial', r'[[:alpha:]]')
+VOCAB.term('initial', r'[[:alpha:]] (?! \s* \d+ )')
