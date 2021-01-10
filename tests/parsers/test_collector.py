@@ -3,8 +3,8 @@
 
 import textwrap
 import unittest
-from label_babel.pylib.trait import Trait
-from label_babel.parsers.collector import COLLECTOR
+from src.pylib.trait import Trait
+from src.parsers.collector import COLLECTOR
 
 
 class TestCollector(unittest.TestCase):

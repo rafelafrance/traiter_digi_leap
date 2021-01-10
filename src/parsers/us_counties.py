@@ -2,8 +2,8 @@
 
 from collections import defaultdict
 import pandas as pd
-from label_babel.pylib import util
-from label_babel.parsers import us_states
+from src.pylib import util
+from src.parsers import us_states
 from traiter.old.vocabulary import Vocabulary
 
 COUNTY_CSV = util.DATA_DIR / 'US_counties.csv'
