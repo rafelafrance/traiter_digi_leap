@@ -3,7 +3,7 @@
 import pandas as pd
 from label_babel.pylib.trait import Trait
 from label_babel.pylib import util, patterns
-from traiter.vocabulary import Vocabulary, LOWEST
+from traiter.old.vocabulary import Vocabulary, LOWEST
 from label_babel.parsers.base import Base
 
 PLANT_FAMILIES = util.DATA_DIR / 'itis_plant_families.csv'

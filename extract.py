@@ -29,7 +29,6 @@ def parse_args():
     """Process command-line arguments."""
     description = """Download data from the eFloras website."""
     arg_parser = argparse.ArgumentParser(
-        allow_abbrev=True,
         formatter_class=argparse.RawDescriptionHelpFormatter,
         description=textwrap.dedent(description),
         fromfile_prefix_chars='@')
@@ -53,7 +52,7 @@ def parse_args():
             argument more than once.""")
 
     arg_parser.add_argument(
-        '--input-file', '-i', type=argparse.FileType('r'), default=sys.stdin,
+        '--input-file', '-i', type=argparse.FileType(), default=sys.stdin,
         help="""The input file containing the raw data. Defaults to stdin.""")
 
     arg_parser.add_argument(

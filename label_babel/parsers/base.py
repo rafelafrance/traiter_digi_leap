@@ -1,6 +1,6 @@
 """Common logic for parsing trait notations."""
 
-from traiter.parser import Parser
+from traiter.old.parser import Parser
 
 
 class Base(Parser):  # pylint: disable=too-few-public-methods

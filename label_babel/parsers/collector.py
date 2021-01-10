@@ -6,7 +6,7 @@ from label_babel.pylib import util
 from label_babel.pylib.trait import Trait
 from label_babel.parsers.us_states import STATE_NAMES
 from label_babel.parsers import name_parts
-from traiter.vocabulary import Vocabulary, LOWEST
+from traiter.old.vocabulary import Vocabulary, LOWEST
 from label_babel.parsers.base import Base
 
 VOCAB = Vocabulary(name_parts.VOCAB)
