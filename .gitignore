@@ -24,9 +24,8 @@ admin/
 output/
 !output/.gitkeep
 
-data/
-!data/.gitkeep
-!data/*.csv
+#data/
+backup/
 
 # Temp files
 temp/
