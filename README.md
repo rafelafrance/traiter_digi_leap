@@ -1,4 +1,4 @@
-# The Digi-Leap Database Project ![CI](https://github.com/rafelafrance/traiter_label_babel/workflows/CI/badge.svg)
+# The Digi-Leap Information Extraction Project ![CI](https://github.com/rafelafrance/traiter_label_babel/workflows/CI/badge.svg)
 
 ## Good news!
 This grant was funded so expect a lot of changes to the repository in the near future.
@@ -8,9 +8,7 @@ This grant was funded so expect a lot of changes to the repository in the near f
 ## All right, what's this all about then?
 **Challenge**: Given images of herbarium specimen sheets extract data from the label. See the example image below.
 
-![herbarium sample](assets/11783738.jpg)
-
-Steps to extract information from the image:
+## Steps to extract information from the image:
 1. Locate the label in the image. In the example the label is in the lower left corner.
 1. Determine if the label is handwritten, typewritten, or a combination.
 1. Adjust the image to help with the next step. Crop, rotate, enhance contrast, remove snow, etc.
@@ -19,7 +17,9 @@ Steps to extract information from the image:
 1. Parse the OCR text to extract information from the label. Information Extraction (IE) is a subfield of Natural Language Processing (NLP)
     1. Use spaCy rule based parsers.
     1. Use either spaCy or HuggingFace NLP neural networks.
-    1. NOTE: The prototype code used an older method of "Stacked Regular Expressions". This code will be replaced.
+    1. NOTE: The prototype code used an older method called "Stacked Regular Expressions". This code will be replaced.
+
+<img src="/assets/11783738.jpg" alt="Herbarium sample" style="height: 100px; width:100px;"/>
 
 ## Install
 You will need to have Python 3.8 (or later) installed. You can install the requirements into your python environment like so:
