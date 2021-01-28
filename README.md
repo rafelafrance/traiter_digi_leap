@@ -3,8 +3,6 @@
 ## Good news!
 This grant was funded so expect a lot of changes to the repository in the near future.
 
-**The name of the project has changed from "Label Babel" to "Digi-Leap". I will rename the repository shortly.**
-
 ## All right, what's this all about then?
 **Challenge**: Given images of herbarium specimen sheets extract data from the label. See the example image below.
 
@@ -19,7 +17,7 @@ This grant was funded so expect a lot of changes to the repository in the near f
     1. Use either spaCy or HuggingFace NLP neural networks.
     1. NOTE: The prototype code used an older method called "Stacked Regular Expressions". This code will be replaced.
 
-<img src="https://github.com/rafelafrance/traiter_digi_leap/blob/master/assets/11783738.jpg" alt="Herbarium sample" height=""150" width="100">
+<img src="https://github.com/rafelafrance/traiter_digi_leap/blob/master/assets/11783738.jpg" alt="Herbarium sample" height="600" width="400">
 
 ## Install
 You will need to have Python 3.8 (or later) installed. You can install the requirements into your python environment like so:
