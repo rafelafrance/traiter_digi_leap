@@ -2,6 +2,7 @@
 """Given a CSV file of iDigBio records download the images."""
 
 from os.path import splitext
+from urllib.error import HTTPError
 from urllib.parse import urlparse
 from urllib.request import urlretrieve
 
@@ -13,9 +14,6 @@ from src.pylib.util import DATA_DIR
 
 def download_idigbio(csv_path):
     """Download iDigBio images out of a CSV file."""
-    headers = {'User-Agent': ('Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 '
-                              '(KHTML, like Gecko) Chrome/41.0.2228.0 Safari/537.3')}
-
     target = 'dwc:associatedMedia'
     df = pd.read_csv(csv_path, dtype=str)
 
@@ -28,7 +26,10 @@ def download_idigbio(csv_path):
         path = DATA_DIR / 'images' / name
         if path.exists():
             continue
-        urlretrieve(url, path)
+        try:
+            urlretrieve(url, path)
+        except HTTPError:
+            continue
 
 
 if __name__ == '__main__':
