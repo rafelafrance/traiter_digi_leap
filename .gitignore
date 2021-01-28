@@ -5,10 +5,11 @@
 .idea/
 .mypy_cache/
 
-# Environment
-.env
-venv/
-.venv/
+# Test
+.coverage
+.cache
+.hypothesis
+.pytest_cache/
 
 # Python
 *.pyc
@@ -16,27 +17,21 @@ venv/
 __pycache__
 .ipynb_checkpoints/
 
-# docs
-docs/old/
-admin/
+# Environment
+.env
+venv/
+.venv/
 
 # data
+docs/
+admin/
 output/
-!output/.gitkeep
-
-#data/
 backup/
 data/
 
 # Temp files
 temp/
 junk*
-
-# Test
-.coverage
-.cache
-.hypothesis
-.pytest_cache/
 
 # Other code
 args/
