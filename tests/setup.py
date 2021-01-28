@@ -4,7 +4,7 @@
 #
 # from traiter.util import shorten  # pylint: disable=import-error
 #
-# from src.matchers.pipeline import Pipeline
+# from src.patterns.pipeline import Pipeline
 #
 # TEST = Pipeline()  # Singleton for testing
 #
