@@ -17,13 +17,13 @@ This grant was funded so expect a lot of changes to the repository in the near f
     1. Use either spaCy or HuggingFace NLP neural networks.
     1. NOTE: The prototype code used an older method called "Stacked Regular Expressions". This code will be replaced.
 
-<img src="https://github.com/rafelafrance/traiter_digi_leap/blob/master/assets/11783738.jpg" alt="Herbarium sample" height="600" width="400">
+<img src="assets/11783738.jpg" alt="Herbarium sample" height="600" width="400">
 
 ## Install
 You will need to have Python 3.8 (or later) installed. You can install the requirements into your python environment like so:
 ```
-git clone https://github.com/rafelafrance/traiter_label_babel.git
-cd traiter_efloras
+git clone https://github.com/rafelafrance/traiter_digi_leap.git
+cd traiter_digi_leap
 optional: virtualenv -p python3.8 venv
 optional: source venv/bin/activate
 python3 -m pip install --requirement requirements.txt
@@ -40,6 +40,6 @@ Having a test suite is absolutely critical. The strategy I use is every new patt
 
 You can run the tests like so:
 ```
-cd /my/path/to/traiter_label_babel
+cd /my/path/to/traiter_digi_leap
 python -m unittest discover
 ```
