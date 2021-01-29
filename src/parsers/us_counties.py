@@ -1,12 +1,14 @@
 """Patterns for US counties."""
 
 from collections import defaultdict
+
 import pandas as pd
-from src.pylib import util
-from src.parsers import us_states
 from traiter.old.vocabulary import Vocabulary
 
-COUNTY_CSV = util.DATA_DIR / 'US_counties.csv'
+from src.parsers import us_states
+from src.pylib import const
+
+COUNTY_CSV = const.DATA_DIR / 'US_counties.csv'
 
 VOCAB = Vocabulary(us_states.VOCAB)
 

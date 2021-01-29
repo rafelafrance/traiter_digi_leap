@@ -1,13 +1,14 @@
 """Find taxon notations on herbarium specimen labels."""
 
 import pandas as pd
-from src.pylib.trait import Trait
-from src.pylib import util, patterns
-from traiter.old.vocabulary import Vocabulary, LOWEST
-from src.parsers.base import Base
+from traiter.old.vocabulary import LOWEST, Vocabulary
 
-PLANT_FAMILIES = util.DATA_DIR / 'itis_plant_families.csv'
-PLANT_GENERA = util.DATA_DIR / 'itis_plant_genera.csv'
+from src.parsers.base import Base
+from src.pylib import const, patterns
+from src.pylib.trait import Trait
+
+PLANT_FAMILIES = const.DATA_DIR / 'itis_plant_families.csv'
+PLANT_GENERA = const.DATA_DIR / 'itis_plant_genera.csv'
 
 VOCAB = Vocabulary(patterns.VOCAB)
 VOCAB.part('word', r' \S+ ', capture=False, priority=LOWEST)

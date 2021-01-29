@@ -20,7 +20,7 @@ def convert(token):
     trait = Trait(start=token.start, end=token.end)
 
     value = regex.sub(
-        r'[^a-z\d]+', '-', token.group['value'], flags=util.FLAGS)
+        r'[^a-z\d]+', '-', token.group['value'], flags=regex.I | regex.X)
 
     if len(value) < 4:
         return None

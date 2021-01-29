@@ -128,4 +128,3 @@ COLLECTOR = Base(
             (?P<col_name> collector ) (?P<collector_no> col_no)
             """),
        ])
-

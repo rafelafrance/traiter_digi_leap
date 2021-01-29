@@ -1,11 +1,12 @@
 """Patterns for US states."""
 
-import regex
 import pandas as pd
-from src.pylib import util, patterns
+import regex
 from traiter.old.vocabulary import Vocabulary
 
-STATE_CSV = util.DATA_DIR / 'US_states.csv'
+from src.pylib import const, patterns
+
+STATE_CSV = const.DATA_DIR / 'US_states.csv'
 STATES = {}
 STATE_NAMES = []
 NORMALIZE_US_STATE = {}

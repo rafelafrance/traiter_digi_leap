@@ -1,10 +1,12 @@
 """Patterns for names."""
 
 import pandas as pd
-from src.pylib import util, patterns
 from traiter.old.vocabulary import Vocabulary
 
-NAME_CSV = util.DATA_DIR / 'name_parts.csv'
+from src.pylib import patterns
+from src.pylib.const import DATA_DIR
+
+NAME_CSV = DATA_DIR / 'name_parts.csv'
 
 SUFFIXES = 'filho ii iii jr sr'.split()
 
