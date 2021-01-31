@@ -6,8 +6,8 @@
 import sys
 import argparse
 import textwrap
-from src.pylib.util import __VERSION__
-from src.readers import csv_reader
+from digi_leap.pylib.util import __VERSION__
+from digi_leap.readers import csv_reader
 
 # Date, taxon names, collector, collector number
 # admin units: like state, county, country

@@ -5,8 +5,8 @@ import textwrap
 from datetime import date
 import unittest
 from dateutil.relativedelta import relativedelta
-from src.pylib.trait import Trait
-from src.parsers.label_date import LABEL_DATE
+from digi_leap.pylib.trait import Trait
+from digi_leap.parsers.label_date import LABEL_DATE
 
 
 class TestLabelDate(unittest.TestCase):

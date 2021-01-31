@@ -3,8 +3,8 @@
 
 import textwrap
 import unittest
-from src.pylib.trait import Trait
-from src.parsers.admin_unit import ADMIN_UNIT
+from digi_leap.pylib.trait import Trait
+from digi_leap.parsers.admin_unit import ADMIN_UNIT
 
 
 class TestAdminUnit(unittest.TestCase):

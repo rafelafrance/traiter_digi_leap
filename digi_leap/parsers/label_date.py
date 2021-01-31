@@ -5,10 +5,10 @@ from calendar import IllegalMonthError
 from dateutil import parser
 from dateutil.relativedelta import relativedelta
 import regex
-from src.pylib.trait import Trait
-from src.pylib import util, patterns
+from digi_leap.pylib.trait import Trait
+from digi_leap.pylib import util, patterns
 from traiter.old.vocabulary import Vocabulary, LOWEST
-from src.parsers.base import Base
+from digi_leap.parsers.base import Base
 
 VOCAB = Vocabulary(patterns.VOCAB)
 

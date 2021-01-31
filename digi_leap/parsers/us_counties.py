@@ -5,8 +5,8 @@ from collections import defaultdict
 import pandas as pd
 from traiter.old.vocabulary import Vocabulary
 
-from src.parsers import us_states
-from src.pylib import const
+from digi_leap.parsers import us_states
+from digi_leap.pylib import const
 
 COUNTY_CSV = const.DATA_DIR / 'US_counties.csv'
 

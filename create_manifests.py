@@ -16,7 +16,7 @@ from shutil import copy
 from PIL import Image
 from tqdm import tqdm
 
-from src.pylib.const import DATA_DIR, TEMP_DIR
+from digi_leap.pylib.const import DATA_DIR, TEMP_DIR
 
 
 def zip_images(image_dir, out_dir, threshold=700_000, factor=0.75):

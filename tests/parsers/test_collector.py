@@ -3,8 +3,8 @@
 
 import textwrap
 import unittest
-from src.pylib.trait import Trait
-from src.parsers.collector import COLLECTOR
+from digi_leap.pylib.trait import Trait
+from digi_leap.parsers.collector import COLLECTOR
 
 
 class TestCollector(unittest.TestCase):

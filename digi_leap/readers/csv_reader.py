@@ -1,7 +1,7 @@
 """Read data from a CSV file."""
 
 import pandas as pd
-from src.pylib import util, db
+from digi_leap.pylib import util, db
 
 
 def read(args):

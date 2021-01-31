@@ -3,8 +3,8 @@
 
 import textwrap
 import unittest
-from src.pylib.trait import Trait
-from src.parsers.plant_taxon import PLANT_TAXON, PLANT_FAMILY
+from digi_leap.pylib.trait import Trait
+from digi_leap.parsers.plant_taxon import PLANT_TAXON, PLANT_FAMILY
 
 
 class TestPlantTaxon(unittest.TestCase):

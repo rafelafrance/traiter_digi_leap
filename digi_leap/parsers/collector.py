@@ -2,12 +2,12 @@
 
 import regex
 from itertools import zip_longest
-from src.pylib import util
-from src.pylib.trait import Trait
-from src.parsers.us_states import STATE_NAMES
-from src.parsers import name_parts
+from digi_leap.pylib import util
+from digi_leap.pylib.trait import Trait
+from digi_leap.parsers.us_states import STATE_NAMES
+from digi_leap.parsers import name_parts
 from traiter.old.vocabulary import Vocabulary, LOWEST
-from src.parsers.base import Base
+from digi_leap.parsers.base import Base
 
 VOCAB = Vocabulary(name_parts.VOCAB)
 

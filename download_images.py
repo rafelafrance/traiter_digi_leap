@@ -10,7 +10,7 @@ from urllib.request import urlretrieve
 import pandas as pd
 from tqdm import tqdm
 
-from src.pylib.const import DATA_DIR
+from digi_leap.pylib.const import DATA_DIR
 
 
 def download_idigbio(csv_path):

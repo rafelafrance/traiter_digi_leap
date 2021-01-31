@@ -1,6 +1,6 @@
 """Build a trait parse result."""
 
-from src.pylib.util import DotDict
+from digi_leap.pylib.util import DotDict
 
 
 class Trait(DotDict):

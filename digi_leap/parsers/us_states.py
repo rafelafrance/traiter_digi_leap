@@ -4,7 +4,7 @@ import pandas as pd
 import regex
 from traiter.old.vocabulary import Vocabulary
 
-from src.pylib import const, patterns
+from digi_leap.pylib import const, patterns
 
 STATE_CSV = const.DATA_DIR / 'US_states.csv'
 STATES = {}

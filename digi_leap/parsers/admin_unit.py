@@ -1,9 +1,9 @@
 """Parse administrative unit notations."""
 
-from src.pylib.trait import Trait
-from src.parsers import us_counties, us_states
+from digi_leap.pylib.trait import Trait
+from digi_leap.parsers import us_counties, us_states
 from traiter.old.vocabulary import Vocabulary
-from src.parsers.base import Base
+from digi_leap.parsers.base import Base
 
 VOCAB = Vocabulary(us_counties.VOCAB)
 

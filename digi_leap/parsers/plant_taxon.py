@@ -3,9 +3,9 @@
 import pandas as pd
 from traiter.old.vocabulary import LOWEST, Vocabulary
 
-from src.parsers.base import Base
-from src.pylib import const, patterns
-from src.pylib.trait import Trait
+from digi_leap.parsers.base import Base
+from digi_leap.pylib import const, patterns
+from digi_leap.pylib.trait import Trait
 
 PLANT_FAMILIES = const.DATA_DIR / 'itis_plant_families.csv'
 PLANT_GENERA = const.DATA_DIR / 'itis_plant_genera.csv'

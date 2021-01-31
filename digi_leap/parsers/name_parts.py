@@ -3,8 +3,8 @@
 import pandas as pd
 from traiter.old.vocabulary import Vocabulary
 
-from src.pylib import patterns
-from src.pylib.const import DATA_DIR
+from digi_leap.pylib import patterns
+from digi_leap.pylib.const import DATA_DIR
 
 NAME_CSV = DATA_DIR / 'name_parts.csv'
 
