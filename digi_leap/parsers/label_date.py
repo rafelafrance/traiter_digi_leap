@@ -1,14 +1,16 @@
 """Parse date notations."""
 
-from datetime import date
 from calendar import IllegalMonthError
+from datetime import date
+
+import regex
 from dateutil import parser
 from dateutil.relativedelta import relativedelta
-import regex
-from digi_leap.pylib.trait import Trait
-from digi_leap.pylib import util, patterns
-from traiter.old.vocabulary import Vocabulary, LOWEST
+from traiter.old.vocabulary import LOWEST, Vocabulary
+
 from digi_leap.parsers.base import Base
+from digi_leap.pylib import patterns
+from digi_leap.pylib.trait import Trait
 
 VOCAB = Vocabulary(patterns.VOCAB)
 
@@ -97,4 +99,4 @@ LABEL_DATE = Base(
 
         VOCAB.producer(short_date_name, f"""
             label? (?P<value> digits sep? month_name ) """),
-        ])
+    ])

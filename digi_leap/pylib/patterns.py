@@ -1,7 +1,6 @@
 """Shared token patterns."""
 
-from traiter.old.vocabulary import Vocabulary, FIRST, LOWEST
-
+from traiter.old.vocabulary import FIRST, LOWEST, Vocabulary
 
 VOCAB = Vocabulary()
 

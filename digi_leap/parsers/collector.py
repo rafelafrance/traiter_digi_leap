@@ -1,17 +1,19 @@
 """Find collector notations on herbarium specimen labels."""
 
-import regex
 from itertools import zip_longest
-from digi_leap.pylib import util
-from digi_leap.pylib.trait import Trait
-from digi_leap.parsers.us_states import STATE_NAMES
+
+import regex
+from traiter.old.vocabulary import LOWEST, Vocabulary
+from traiter.util import squash
+
 from digi_leap.parsers import name_parts
-from traiter.old.vocabulary import Vocabulary, LOWEST
 from digi_leap.parsers.base import Base
+from digi_leap.parsers.us_states import STATE_NAMES
+from digi_leap.pylib.trait import Trait
 
 VOCAB = Vocabulary(name_parts.VOCAB)
 
-MIN_LEN = 5     # Minimum collector name length
+MIN_LEN = 5  # Minimum collector name length
 
 
 def convert(token):
@@ -46,7 +48,7 @@ def convert(token):
             return None
         traits[0].col_no = col_no
 
-    return util.squash(traits)
+    return squash(traits)
 
 
 COLLECTOR = Base(
@@ -127,4 +129,4 @@ COLLECTOR = Base(
         VOCAB.producer(convert, """
             (?P<col_name> collector ) (?P<collector_no> col_no)
             """),
-       ])
+    ])

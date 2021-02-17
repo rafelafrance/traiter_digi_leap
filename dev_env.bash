@@ -17,4 +17,4 @@ if [ -f requirements_dev.txt ]; then pip install -r requirements_dev.txt; fi
 pip install -U spacy-nightly --pre
 python -m spacy download en_core_web_sm
 
-pip install -e ../traiter_spacy2
+pip install -e ../../traiter/traiter_spacy2
