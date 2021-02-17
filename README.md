@@ -20,11 +20,11 @@ This grant was funded so expect a lot of changes to the repository in the near f
 <img src="assets/11783738.jpg" alt="Herbarium sample" height="600" width="400">
 
 ## Install
-You will need to have Python 3.8 (or later) installed. You can install the requirements into your python environment like so:
+You will need to have Python 3.9 (or later) installed. You can install the requirements into your python environment like so:
 ```
 git clone https://github.com/rafelafrance/traiter_digi_leap.git
 cd traiter_digi_leap
-optional: virtualenv -p python3.8 venv
+optional: virtualenv -p python3.9 venv
 optional: source venv/bin/activate
 python3 -m pip install --requirement requirements.txt
 python3 -m pip install git+https://github.com/rafelafrance/traiter.git@master#egg=traiter
