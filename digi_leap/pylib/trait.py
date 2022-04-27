@@ -1,6 +1,6 @@
 """Build a trait parse result."""
 
-from traiter.util import DotDict
+from .util import DotDict
 
 
 class Trait(DotDict):

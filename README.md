@@ -1,6 +1,6 @@
 # The Digi-Leap Information Extraction Project ![CI](https://github.com/rafelafrance/traiter_label_babel/workflows/CI/badge.svg)
 
-## This project is now part of the Digi-Leap project.
+# This project is now part of the Digi-Leap project.
 
 ## All right, what's this all about then?
 **Challenge**: Given images of herbarium specimen sheets extract data from the label. See the example image below.
